@@ -1,0 +1,6 @@
+x = int(input("Enter Number1 : "))
+y = int(input("Enter Number2 : "))
+print(x,"+",y,"=",x + y)
+print(x,"-",y,"=",x - y)
+print(x,"*",y,"=",x * y)
+print(x,"/",y,"=",int(x / y))
