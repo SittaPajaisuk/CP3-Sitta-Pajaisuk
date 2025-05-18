@@ -5,7 +5,8 @@ def login():
         print("Done !")
         return showMenu()
     else:
-        print("Incorrect")
+        print("Wrong!!!")
+        reture login()
 
 def showMenu():
     print("----- iShop -----")
@@ -16,9 +17,9 @@ def showMenu():
 def menuSelect():
     userSelected = int(input(">>"))
     if userSelected == 1:
-        print(vatCalculator(int(input("Vat : " ))))
+        print("Total Price :",vatCalculate(int(input("Price (THB) : "))))
     elif userSelected == 2:
-        print(priceCalculator())
+        print("Total Price :",pricecalcuate())
 
 def vatCalculator(totalPrice):
     vat = 7
